@@ -141,7 +141,7 @@ mkdir -p ~/Sites/magento
 cd $_
 
 # Run this automated one-liner from the directory you want to install your project.
-curl -s https://raw.githubusercontent.com/gajenderyadav/docker-magento-automated-installation/master/lib/onelinesetup | bash -s -- magento.test 2.4.6-p4 community
+[curl -s https://gist.githubusercontent.com/gajenderyadavv/f613a50d398b32c22a4191da753546bb/raw/4fe9db7e9e7946102faa2c5cb1ae6ff10ea2a1b0/install-magento2-using-docker| bash -s -- magento.test 2.4.6-p4 community
 ```
 
 The `magento.test` above defines the hostname to use, and the `2.4.6-p4` defines the Magento version to install. Note that since we need a write to `/etc/hosts` for DNS resolution, you will be prompted for your system password during setup.
